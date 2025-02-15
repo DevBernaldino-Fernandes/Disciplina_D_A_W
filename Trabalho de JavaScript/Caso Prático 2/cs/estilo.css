@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do body */
+  body {
+    background: linear-gradient(135deg, #ffffff, #282828);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container principal */
+  .main {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.9);
+    
+  }
+  
+  /* Cabeçalho */
+  .verificador h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #867d7d;
+    font-family: fantasy;
+    text-shadow: 0 3px 5px rgb(0, 0, 0) ; 
+  }
+  
+  /* Seções do formulário */
+  .entrada, .selecao {
+    margin-bottom: 30px;
+  }
+  
+  /* Parágrafos */
+  .verificador p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Labels */
+  .verificador label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Inputs e selects */
+  .verificador input[type="number"],
+  .verificador select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Container para botões */
+  .btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Botões */
+  .btn-container button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #989899;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.9);
+  }
+  
+  .btn-container button:hover {
+    background-color: #828284;
+  }
+  
+  .btn-container button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Botões de limpar com cor diferente */
+  #btnLimpar, #btnLimparFaixa {
+    background-color: #696868;
+  }
+  
+  #btnLimpar:hover, #btnLimparFaixa:hover {
+    background-color: #1e1c1cce;
+  }
+
+  /* Tela para o primeiro verificador */
+#resultado {
+  width: 462px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  background-color: #33333323;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border-radius: 5px;
+  border: 2px solid rgba(5, 5, 5, 0.315);
+  margin-bottom: 15px;
+}
+
+ /* Tela para o segundo verificador */
+#resultadoFaixa{
+  width: 462px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  background-color: #33333323;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(5, 5, 5, 0.315);
+}
+
+/* Nome do desenvolvedor */
+.dev {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}

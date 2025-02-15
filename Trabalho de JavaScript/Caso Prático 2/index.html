@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Idade</title>
+  <link rel="stylesheet" href="cs/estilo.css">
+</head>
+<body>
+  <div class="main">
+    <div class="verificador">
+      <h1>Verificador de Idade</h1>
+
+      <!-- Seção com o campo para inserir a idade -->
+      <section class="entrada">
+        <!-- <p>Insira sua idade para verificar:</p> -->
+        <form id="formIdade">
+          <div id="resultado">vazio</div>
+          <label for="idade"></label>
+          <input type="number" id="idade" required placeholder="Sua idade aqui Ex: 18">
+          <div class="btn-container">
+            <button type="button" id="btnVerificar">Verificar</button>
+            <button type="button" id="btnLimpar">Limpar</button>
+          </div>
+        </form>
+        
+      </section>
+
+      <!-- Seção com caixa de seleção para escolher a faixa etária -->
+      <section class="selecao">
+        <form id="formFaixa">
+          <div id="resultadoFaixa">Vazio</div>
+          <label for="faixa"></label>
+          <select id="faixa">
+            <option value="">Faxa Etaria</option>
+            <option value="crianca">0 a 12 anos (Criança)</option>
+            <option value="adolescente">13 a 19 anos (Adolescente)</option>
+            <option value="adulto">20 a 64 anos (Adulto)</option>
+            <option value="senior">65+ anos (Sénior)</option>
+          </select>
+          <div class="btn-container">
+            <button type="button" id="btnVerificarFaixa">Verificar Faixa</button>
+            <button type="button" id="btnLimparFaixa">Limpar</button>
+          </div>
+        </form>
+        
+      </section>
+      <p class="dev">&copy By Bernaldino Fernandes</p>
+    </div>
+  </div>
+  <script src="js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilização do body */
+  body {
+    background: linear-gradient(180deg, #ffffff, #000000ba);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Centraliza o conteúdo principal */
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilo da calculadora */
+  .calc {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.9);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Título */
+  .calc h1 {
+    margin-bottom: 1rem;
+    color: #867d7d;
+    font-family: fantasy;
+    text-shadow: 0 3px 5px rgb(0, 0, 0) ;
+  }
+  
+  /* Texto explicativo */
+  .calc p {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Labels */
+  .calc label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Campos de entrada */
+  .calc input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Container para os botões */
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Estilo para os botões */
+  .btn-container button {
+    flex: 1 1 calc(50% - 10px); /* Dois botões por linha, considerando o gap */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #909090;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Hover nos botões */
+  .btn-container button:hover {
+    background-color: #918e8e;
+  }
+  
+  /* Feedback ao clicar */
+  .btn-container button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Exibição do resultado */
+  .calc h2 {
+    margin-top: 1.5rem;
+    color: #333;
+    font-size: 1.2rem;
+    
+  }
+.display{
+    display: flex;
+    border: 3px solid rgba(0, 0, 0, 0.171);
+    width: 50 px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ded7d7;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.btn-container button.limpar {
+    flex: 1 1 100%; /* Botão de limpar ocupa a linha toda */
+    background-color: #6c6a6a;
+  }
+
+/* Nome do desenvolvedor */
+.dev {
+  display:flex ;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
